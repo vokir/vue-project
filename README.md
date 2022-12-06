@@ -1,29 +1,75 @@
-# todo
+# Название проекта
 
-This template should help get you started developing with Vue 3 in Vite.
+Для запуска проекта в локальной среде следующие требования:
 
-## Recommended IDE Setup
+* Node js 16.14.0 версии или выше
+* Пакетный менеджер yarn. Установка: https://yarnpkg.com/getting-started/install
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Используемые команды
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
+Установка зависимостей:
+```
+yarn install
 ```
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
+Запуск локального сервера:
+```
+yarn dev
 ```
 
-### Compile and Minify for Production
+Запуск билда:
+```
+yarn build
+```
 
-```sh
-npm run build
+Запуск превью:
+
+```
+yarn preview
+```
+
+## Структура проекта
+
+```
+./
+└── project
+    ├── public # Папка с шаблонами и статичными фалами
+    ├── src # Весь исходный код проекта
+    │   ├── assets # Дополнительные статические ресурсы
+    │   │   └── fonts # Шприфты
+    │   │   └── style # Стили
+    │   ├── components # Все vue компоненты проекта (*)
+    │   │   ├── some-component
+    │   │   ├── some-component
+    │   │   ├── ...
+    │   │   ├── ui # Простые ui эелементы интерфейса: кнопки, карточки, шильдики и т.д.
+    │   │   │   ├── v-button
+    │   │   │   │   └── v-button.vue
+    │   │   │   │   └── style.scss
+    │   │   │   ├── v-input
+    │   │   │   │   └── v-input.vue
+    │   │   │   │   └── style.scss
+    │   │   │   └── ...
+    │   ├── helpers # Все глобальные вспомогательные функции
+    │   ├── hooks # Папка с хуками приложения
+    │   │   ├── useEventListeners.js
+    │   │   └── ...
+    │   ├── router # Папка с маршрутами приложения
+    │   ├── service # Папка с сервисами приложения
+    │   ├── store # Папка с хранилищем приложения
+    │   ├── views # Все vue страницы проекта
+    │   │   ├── home
+    │   │   │   └── home.vue
+    │   │   │   └── home.scss
+    │   │   └── ...
+    │   ├── main.js
+    └── └── App.vue
+```
+
+## Пример структуры компонентов
+
+```
+v-button
+├── v-button.scss # Стили главного комонента 
+└── v-button.vue # Код главного компонента
 ```
