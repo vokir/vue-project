@@ -10,10 +10,9 @@
 // 800 Black or Extra Bold or Heavy;
 // 900 Extra Black or Fat or Ultra Black
 
-@include font-face('ProximaNova', "../fonts/ProximaNova/ProximaNova-Light", 200, normal, ttf);
-@include font-face('ProximaNova', "../fonts/ProximaNova/ProximaNovaT-Thin", 300, normal, ttf);
-@include font-face('ProximaNova', "../fonts/ProximaNova/ProximaNova-Regular", 400, normal, ttf);
-@include font-face('ProximaNova', "../fonts/ProximaNova/ProximaNova-Semibold", 600, normal, ttf);
-@include font-face('ProximaNova', "../fonts/ProximaNova/ProximaNova-Bold", 700, normal, ttf);
-@include font-face('ProximaNova', "../fonts/ProximaNova/ProximaNova-Black", 800, normal, ttf);
-@include font-face('ProximaNova', "../fonts/ProximaNova/ProximaNova-Extrabld", 900, normal, ttf);
+@include font-face('Roboto', "../fonts/Roboto/Roboto-Thin", 100, normal, ttf);
+@include font-face('Roboto', "../fonts/Roboto/Roboto-Light", 200, normal, ttf);
+@include font-face('Roboto', "../fonts/Roboto/Roboto-Regular", 400, normal, ttf);
+@include font-face('Roboto', "../fonts/Roboto/Roboto-Medium", 500, normal, ttf);
+@include font-face('Roboto', "../fonts/Roboto/Roboto-Bold", 700, normal, ttf);
+@include font-face('Roboto', "../fonts/Roboto/Roboto-Black", 800, normal, ttf);

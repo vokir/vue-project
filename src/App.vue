@@ -7,6 +7,5 @@
       </nav>
     </div>
   </header>
-
   <router-view />
 </template>
